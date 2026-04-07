@@ -1,251 +1,41 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Türküler - Eskişehir Yöresi</title>
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #e67e22;
-            --accent: #f1c40f;
-            --bg: #f4f4f4;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        .card-container {
-            width: 450px;
-            height: 800px;
-            background: white;
-            border-radius: 25px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* KAPAK ALANI - YATAY GÖRSEL ODAKLI */
-        .cover-area {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            transition: transform 1.2s cubic-bezier(0.85, 0, 0.15, 1);
-            z-index: 10;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .cover-area.up {
-            transform: translateY(-92%);
-        }
-
-        .cover-area h2 {
-            color: var(--primary);
-            font-size: 2.2rem;
-            margin-bottom: 5px;
-            font-weight: 800;
-        }
-
-        .cover-area h4 {
-            color: var(--secondary);
-            margin-top: 0;
-            letter-spacing: 2px;
-            font-weight: 400;
-            margin-bottom: 25px;
-        }
-
-        /* YATAY GÖRSEL ALANI */
-        .visual-box {
-            width: 90%;
-            height: auto;
-            /* ÖNEMLİ: 'gorsel.jpg' yerine kendi dosya adını yazmalısın */
-            background: url('Halkalı-Seker.jpeg') center/contain no-repeat;
-            aspect-ratio: 16 / 9;
-            border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            background-color: #f9f9f9;
-        }
-
-        .btn-play {
-            margin-top: 40px;
-            padding: 18px 55px;
-            background: var(--secondary);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 8px 20px rgba(230,126,34,0.4);
-            transition: 0.3s ease;
-        }
-
-        .btn-play:hover {
-            transform: scale(1.05);
-            background: #d35400;
-        }
-
-        /* İÇERİK ALANI */
-        .content-area {
-            position: absolute;
-            top: 8%;
-            width: 100%;
-            height: 92%;
-            overflow-y: auto;
-            background: white;
-        }
-
-        .video-wrapper {
-            width: 100%;
-            background: #000;
-            line-height: 0;
-        }
-
-        .text-content {
-            padding: 30px;
-        }
-
-        .section {
-            margin-bottom: 35px;
-        }
-
-        .section h3 {
-            color: var(--secondary);
-            border-left: 5px solid var(--secondary);
-            padding-left: 15px;
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-        }
-
-        .section p {
-            color: #444;
-            line-height: 1.8;
-            font-size: 1rem;
-            margin: 0;
-        }
-
-        .dede-quote {
-            background: #fff9f2;
-            padding: 20px;
-            border-radius: 15px;
-            font-style: italic;
-            border: 1px dashed var(--secondary);
-        }
-
-        .tags-container {
-            margin-top: 15px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #f0f0f0;
-            padding: 6px 14px;
-            border-radius: 10px;
-            font-size: 0.9rem;
-            margin: 4px;
-            color: var(--primary);
-            font-weight: 600;
-        }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    body {background-color: #f1f1f1}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Tahoma; -webkit-text-stroke: #000000; background-color: #f7f7f7; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.2px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #de691b}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Tahoma; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Tahoma; color: #343434; -webkit-text-stroke: #343434; background-color: #ffffff}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Tahoma; color: #343434; -webkit-text-stroke: #343434}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Tahoma; -webkit-text-stroke: #000000; background-color: #fff8ef}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px Tahoma; color: #212f3f; -webkit-text-stroke: #212f3f}
+    span.s1 {font-kerning: none; background-color: #ffffff}
+    span.s2 {font-kerning: none}
+    span.s3 {font: 15.6px 'Apple Color Emoji'; font-kerning: none; background-color: #ffffff}
+    span.s4 {font-kerning: none; background-color: #ececec}
+    span.s5 {font: 12.0px Tahoma; font-kerning: none; color: #000000; background-color: #ffffff; -webkit-text-stroke: 0px #000000}
+  </style>
 </head>
 <body>
-
-<div class="card-container">
-    <div class="cover-area" id="coverArea">
-        <h2>Halkalı Şeker</h2>
-        <h4>ESKİŞEHİR YÖRESİ</h4>
-        <div class="visual-box"></div>
-        <button class="btn-play" id="mainBtn">KEŞFET</button>
-    </div>
-
-    <div class="content-area">
-        <div class="video-wrapper">
-            <div id="player"></div>
-        </div>
-
-        <div class="text-content">
-            <div class="section">
-                <h3>📜 Tarihsel Arka Plan</h3>
-                <p>Eskişehir yöresine ait olan "Halkalı Şeker", Türk halk müziği repertuvarının en neşeli ve karakteristik eserlerinden biridir. Kesin çıkış tarihi bilinmemekle birlikte, Anadolu’nun sözlü geleneği içerisinde pişerek günümüze ulaşmış anonim bir halk ezgisidir. Bu eser, Türkiye Yüzyılı Maarif Modeli (TYMM) kapsamında yer alan Saygı, Sevgi ve Dostluk değerleriyle doğrudan eşleşmektedir.
-
-Türkünün tarihsel arka planı, Eskişehir’in bir kavşak noktası olması ve gelişmiş şekerlemecilik kültürüyle ilişkilidir. Osmanlı’nın son dönemi ve Cumhuriyet’in ilk yıllarındaki sosyal yaşamı yansıtan eser, o dönemin en kıymetli ikramı olan "halkalı şeker" imgesi üzerinden toplumsal bir dostluk ve paylaşım öyküsü anlatır. Neşeli ritmi ve naif sözleri, bireyler arasındaki sevgiyi ve bir arada eğlenme kültürünü temsil eder.
-
-Uygulama sürecinde öğrenciler, aile büyüklerinin hafızasındaki türkü hikayelerine odaklanarak geçmişin estetik değerlerine ve el emeğine karşı bir saygı bilinci geliştirirler. Somut objeler (şeker, halka, fıstık) içermesi sayesinde temel eğitim düzeyindeki öğrencilerin soyut kültürel değerleri somutlaştırarak kavramasına olanak tanır. Eskişehir’in yerel kimliğini ulusal düzeye taşıyan bu eser, milli değerlerimizin sanat ve nezaketle harmanlanmış en tatlı temsilcisidir.</p>
-            </div>
-
-            <div class="section">
-                <h3>🌟 TYMM Uyumu (Değerler)</h3>
-                <p>Türkiye Yüzyılı Maarif Modeli kapsamında <strong>Saygı, Sevgi ve Dostluk</strong> değerleriyle eşleşmektedir. Toplumsal neşeyi ve paylaşım kültürünü temsil eder.</p>
-            </div>
-
-            <div class="section">
-                <h3>👴 Dedem Anlatıyor</h3>
-                <div class="dede-quote">
-                    "Dedem Anlatıyor: "Halkalı Şeker’in Neşesi"
-(Eskişehirli 78 yaşındaki Mehmet Dede’nin anlatımıyla...)
-
-"Evlat, bakma şimdiki düğünlerin öyle gürültülü olduğuna... Bizim vaktimizde Eskişehir’in o kerpiç evli mahallelerinde düğün oldu mu, bütün şehir duyardı ama kulağıyla değil, kalbiyle duyardı. O zamanlar şimdiki gibi her köşe başında pastane, çikolata nerede? En büyük zenginlik, en tatlı ikram 'Halkalı Şeker' idi.
-
-Düğün alayı kuruldu mu, mahallenin gençleri toplanır, saz heyeti o meşhur ritme bir başlardı: 'Halkalı şeker, şam fıstık...' O an sanki yer yerinden oynardı. Ama sanma ki sadece eğlenceydi bu. O şekerleri birbirimize ikram ederken aramızdaki dostluğu, ağzımızın tadını paylaşırdık. Birine şeker uzatmak, ona olan sevgini ve nezaketini sessizce söylemekti.
-
-Ben neneni ilk o düğünlerden birinde görmüştüm. Elinde o nakışlı mendili, üzerinde gül oyalı çemberi... Bu türkü çalarken herkes el çırpar, birbirine saygıyla yol verirdi. O şekerlerin halkası gibi biz de birbirimize kenetlenirdik. Şimdi bu türküyü ne zaman duysam, o eski Odunpazarı sokaklarının şeker kokusu burnuma gelir. Aman ha evlat, bu neşeyi sakın kaybetmeyin; çünkü bu türkü sadece nota değil, bizim birbirimize duyduğumuz hürmetin sesidir.""
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>🎓 Ders Entegrasyonu</h3>
-                <div class="tags-container">
-                    <span class="tag">Türkçe: Betimleme</span>
-                    <span class="tag">Matematik: Örüntüler</span>
-                    <span class="tag">Sosyal Bilgiler: Yerel Kimlik</span>
-                    <span class="tag">Sanat: Dijital İllüstrasyon</span>
-                </div>
-                <p style="margin-top:15px">Matematik dersinde türkünün 4/4'lük ritmi üzerinden geometrik örüntüler ve ritmik sayma egzersizleri yapılabilir.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    // YouTube API Yükleme
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            height: '250',
-            width: '100%',
-            videoId: 'IxNlwaq8UTE',
-            events: {
-                'onReady': onPlayerReady
-            }
-        });
-    }
-
-    function onPlayerReady(event) {
-        document.getElementById('mainBtn').addEventListener('click', function() {
-            document.getElementById('coverArea').classList.add('up');
-            player.playVideo();
-        });
-    }
-</script>
-
+<h2 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; font: 26.4px Tahoma; color: #212f3f; -webkit-text-stroke: #212f3f"><span class="s1"><b>Halkalı Şeker</b><b></b></span></h2>
+<h4 style="margin: 0.0px 0.0px 25.0px 0.0px; text-align: center; font: 12.0px Tahoma; color: #de691b; -webkit-text-stroke: #de691b"><span class="s1">ESKİŞEHİR YÖRESİ</span></h4>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p4"><span class="s2"><b>KEŞFET</b></span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 15.6px Tahoma; color: #de691b; -webkit-text-stroke: #de691b"><span class="s3">📜</span><span class="s1"><b> Tarihsel Arka Plan</b><b></b></span></h3>
+<p class="p7"><span class="s2">Eskişehir yöresine ait olan "Halkalı Şeker", Türk halk müziği repertuvarının en neşeli ve karakteristik eserlerinden biridir. Kesin çıkış tarihi bilinmemekle birlikte, Anadolu’nun sözlü geleneği içerisinde pişerek günümüze ulaşmış anonim bir halk ezgisidir. Bu eser, Türkiye Yüzyılı Maarif Modeli (TYMM) kapsamında yer alan Saygı, Sevgi ve Dostluk değerleriyle doğrudan eşleşmektedir. Türkünün tarihsel arka planı, Eskişehir’in bir kavşak noktası olması ve gelişmiş şekerlemecilik kültürüyle ilişkilidir. Osmanlı’nın son dönemi ve Cumhuriyet’in ilk yıllarındaki sosyal yaşamı yansıtan eser, o dönemin en kıymetli ikramı olan "halkalı şeker" imgesi üzerinden toplumsal bir dostluk ve paylaşım öyküsü anlatır. Neşeli ritmi ve naif sözleri, bireyler arasındaki sevgiyi ve bir arada eğlenme kültürünü temsil eder. Uygulama sürecinde öğrenciler, aile büyüklerinin hafızasındaki türkü hikayelerine odaklanarak geçmişin estetik değerlerine ve el emeğine karşı bir saygı bilinci geliştirirler. Somut objeler (şeker, halka, fıstık) içermesi sayesinde temel eğitim düzeyindeki öğrencilerin soyut kültürel değerleri somutlaştırarak kavramasına olanak tanır. Eskişehir’in yerel kimliğini ulusal düzeye taşıyan bu eser, milli değerlerimizin sanat ve nezaketle harmanlanmış en tatlı temsilcisidir.</span></p>
+<h3 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 15.6px Tahoma; color: #de691b; -webkit-text-stroke: #de691b"><span class="s3">🌟</span><span class="s1"><b> TYMM Uyumu (Değerler)</b><b></b></span></h3>
+<p class="p8"><span class="s1">Türkiye Yüzyılı Maarif Modeli kapsamında <b>Saygı, Sevgi ve Dostluk</b> değerleriyle eşleşmektedir. Toplumsal neşeyi ve paylaşım kültürünü temsil eder.</span></p>
+<h3 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 15.6px Tahoma; color: #de691b; -webkit-text-stroke: #de691b"><span class="s3">👴</span><span class="s1"><b> Dedem Anlatıyor</b><b></b></span></h3>
+<p class="p9"><span class="s2">"Dedem Anlatıyor: "Halkalı Şeker’in Neşesi" (Eskişehirli 78 yaşındaki Mehmet Dede’nin anlatımıyla...) "Evlat, bakma şimdiki düğünlerin öyle gürültülü olduğuna... Bizim vaktimizde Eskişehir’in o kerpiç evli mahallelerinde düğün oldu mu, bütün şehir duyardı ama kulağıyla değil, kalbiyle duyardı. O zamanlar şimdiki gibi her köşe başında pastane, çikolata nerede? En büyük zenginlik, en tatlı ikram 'Halkalı Şeker' idi. Düğün alayı kuruldu mu, mahallenin gençleri toplanır, saz heyeti o meşhur ritme bir başlardı: 'Halkalı şeker, şam fıstık...' O an sanki yer yerinden oynardı. Ama sanma ki sadece eğlenceydi bu. O şekerleri birbirimize ikram ederken aramızdaki dostluğu, ağzımızın tadını paylaşırdık. Birine şeker uzatmak, ona olan sevgini ve nezaketini sessizce söylemekti. Ben neneni ilk o düğünlerden birinde görmüştüm. Elinde o nakışlı mendili, üzerinde gül oyalı çemberi... Bu türkü çalarken herkes el çırpar, birbirine saygıyla yol verirdi. O şekerlerin halkası gibi biz de birbirimize kenetlenirdik. Şimdi bu türküyü ne zaman duysam, o eski Odunpazarı sokaklarının şeker kokusu burnuma gelir. Aman ha evlat, bu neşeyi sakın kaybetmeyin; çünkü bu türkü sadece nota değil, bizim birbirimize duyduğumuz hürmetin sesidir.""</span></p>
+<h3 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 15.6px Tahoma; color: #de691b; -webkit-text-stroke: #de691b"><span class="s3">🎓</span><span class="s1"><b> Ders Entegrasyonu</b><b></b></span></h3>
+<p class="p10"><span class="s4"><b>Türkçe: Betimleme</b></span><span class="s5"> </span><span class="s4"><b>Matematik: Örüntüler</b></span><span class="s5"> </span><span class="s4"><b>Sosyal Bilgiler: Yerel Kimlik</b></span><span class="s5"> </span><span class="s4"><b>Sanat: Dijital İllüstrasyon</b><b></b></span></p>
+<p class="p8"><span class="s1">Matematik dersinde türkünün 4/4'lük ritmi üzerinden geometrik örüntüler ve ritmik sayma egzersizleri yapılabilir.</span></p>
 </body>
 </html>
